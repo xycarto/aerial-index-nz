@@ -15,6 +15,9 @@ RUN ?= docker run -i --rm  \
 get-data:
 	$(RUN) python3 src/get-data.py $(region) $(workunit)
 
+get-regions:
+	$(RUN) python3 src/get-regions.py
+
 list-region:
 	$(RUN) python3 src/list-region.py $(region)
 
@@ -23,6 +26,9 @@ index-region:
 
 merge-region:
 	$(RUN) bash src/merge-region.sh $(region)
+
+all-regions:
+	$(RUN) bash builds/index-all-region.sh
 
 ##### DOCKER #####
 

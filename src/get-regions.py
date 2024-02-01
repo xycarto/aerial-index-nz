@@ -16,11 +16,11 @@ def main():
 
     with open(REGIONS_FILE,'w') as l:
         for wu in top:
-            basename = os.path.basename(wu)
-            l.write(f"{basename}\n")   
+            if 'LICENSE' not in wu and 'catalog' not in wu:
+                basename = os.path.basename(wu)
+                l.write(f"{basename}\n")   
 
 if __name__ == "__main__":
-    REGION = sys.argv[1]
     BUCKET = 'nz-imagery'
     DATA_DIR = f'data/lists'
     REGIONS_FILE = f'{DATA_DIR}/regions.txt'
