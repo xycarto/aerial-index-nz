@@ -12,12 +12,17 @@ RUN ?= docker run -i --rm  \
 
 
 ##### LINZ Indexing #####
-
-test:
-	$(RUN) python3 src/test-header.py
-
 get-data:
 	$(RUN) python3 src/get-data.py $(region) $(workunit)
+
+list-region:
+	$(RUN) python3 src/list-region.py $(region)
+
+region:
+	$(RUN) bash builds/index-region.sh $(region)
+
+merge-region:
+	$(RUN) bash src/merge-region.sh $(region)
 
 ##### DOCKER #####
 

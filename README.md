@@ -23,3 +23,30 @@ Example
 ```
 make get-data region=wellington workunit=carterton_2021_0.075m
 ```
+
+## Full Region
+
+Create index for requested region
+
+```
+make region region=[REGION NAME]
+```
+
+Exmaple
+
+```
+make region region=wellington
+```
+
+## Merge GPKGS
+
+After creating indexes, method to merge them into a single file
+
+```
+make merge-region region=[REGION NAME]
+```
+
+Example
+```
+make merge-region region=wellington
+```
