@@ -15,7 +15,7 @@ make docker-pull
 Run Single Acquisition
 
 ```
-make get-data region=[REGION NMAE HERE] workunit=[WORKUNIT NAME HERE]
+make get-data region=[REGION NAME HERE] workunit=[WORKUNIT NAME HERE]
 ```
 
 Example
