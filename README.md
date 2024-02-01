@@ -50,3 +50,11 @@ Example
 ```
 make merge-region region=wellington
 ```
+
+## Entire Country
+
+Index the entire S3 data collection
+
+```
+make all-regions
+```
