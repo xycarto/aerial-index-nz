@@ -29,13 +29,13 @@ make get-data region=wellington workunit=carterton_2021_0.075m
 Create index for requested region
 
 ```
-make region region=[REGION NAME]
+make index-region region=[REGION NAME]
 ```
 
 Exmaple
 
 ```
-make region region=wellington
+make index-region region=wellington
 ```
 
 ## Merge GPKGS

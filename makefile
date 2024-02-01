@@ -18,7 +18,7 @@ get-data:
 list-region:
 	$(RUN) python3 src/list-region.py $(region)
 
-region:
+index-region:
 	$(RUN) bash builds/index-region.sh $(region)
 
 merge-region:
