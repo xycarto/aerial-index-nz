@@ -9,6 +9,4 @@ if [[ -f $merged_gpkg ]]; then
     rm $merged_gpkg
 fi
 
-ls ${region_gpkgs}
-
-# ogrmerge.py -single -overwrite_ds -f GPKG -o ${merged_gpkg} ${region_gpkgs}/*.gpkg
+ogrmerge.py -single -overwrite_ds -f GPKG -o ${merged_gpkg} ${region_gpkgs}/*.gpkg
