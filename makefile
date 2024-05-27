@@ -27,6 +27,9 @@ index-region:
 merge-region:
 	$(RUN) bash src/merge-region.sh $(region)
 
+merge-all:
+	$(RUN) bash src/merge-all.sh
+
 all-regions:
 	$(RUN) bash builds/index-all-region.sh
 
